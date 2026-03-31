@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devops-showcase
+  namespace: devops-showcase
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: devops-showcase
+  template:
+    metadata:
+      labels:
+        app: devops-showcase
+    spec:
+      containers:
+        - name: web
+          image: REPLACE_WITH_IMAGE:latest
+          ports:
+            - containerPort: 80
