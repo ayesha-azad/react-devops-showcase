@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: web
-          image: REPLACE_WITH_IMAGE:latest
+          image: ayeshaazad/devops-showcase:latest
           ports:
             - containerPort: 80
